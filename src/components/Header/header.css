@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logoImage{
+    height: 3rem;
+    width: 10rem;
+}
+.header>ul{
+    list-style: none;
+    display: flex;
+    gap:2rem;
+    cursor: pointer;
+}
+.header>ul>li:hover{
+    color:var(--orange); 
+}

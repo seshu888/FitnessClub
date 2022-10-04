@@ -1,0 +1,116 @@
+.testimonials{
+    display: flex;
+    padding:20px;
+}
+.rightside-testi{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px;
+    padding:30px;
+}
+.testi-intro-head{
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 24px;
+}
+.stroke-text-testi{
+    color:transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:white;
+    font-size: 42px;
+}
+.testi-desc{
+    color:white;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+.testi-heading{
+    font-size: 48px;
+    color:white;
+    font-weight: bold;
+}
+.about-customer{
+    color: white;
+}
+.about-customer>b{
+    color: var(--orange);
+    font-weight: bold;
+}
+.leftside-testi{
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.testi-progile-pic{
+    height:18rem;
+    width: 17rem;
+    position: absolute;
+    object-fit: cover;
+    bottom:20px
+}
+.arrows{
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    gap:0.7rem;
+    display: flex;
+}
+.arrows>img{
+    height: 40px;
+    width: 40px;
+}
+.border-shadow{
+    height:18rem;
+    width: 17rem;
+    position: absolute;
+    border: 2px solid orange;
+    top:70px;
+    left: 185px;
+    background-color: transparent;
+}
+.testi-blur{
+    height: 22rem;
+    width: 32rem;
+    top:3;
+    left:0;
+}
+@media screen and (max-width:768px) {
+    .testimonials{
+        flex-direction: column;
+    }
+    .rightside-testi>:nth-child(2),
+    .rightside-testi>:nth-child(3){
+        font-size: xx-large;
+    }
+    .leftside-testi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:2rem;
+    }
+    .leftside-testi>div{
+        position: relative;
+        display: none;
+    }
+    .leftside-testi>img{
+        top:0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+    .leftside-testi>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
